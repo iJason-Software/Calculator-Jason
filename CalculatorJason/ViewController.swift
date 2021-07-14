@@ -8,28 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var clearButtom: UIButton!
-    @IBOutlet weak var plusMinusButtom: UIButton!
-    @IBOutlet weak var percentageButtom: UIButton!
-    @IBOutlet weak var divideButtom: UIButton!
-    @IBOutlet weak var timesButtom: UIButton!
-    @IBOutlet weak var minusButtom: UIButton!
-    @IBOutlet weak var plusButtom: UIButton!
-    @IBOutlet weak var equalButtom: UIButton!
-    @IBOutlet weak var pointButtom: UIButton!
-    @IBOutlet weak var zeroButtom: UIButton!
-    @IBOutlet weak var oneButtom: UIButton!
-    @IBOutlet weak var twoButtom: UIButton!
-    @IBOutlet weak var threeButtom: UIButton!
-    @IBOutlet weak var fourButtom: UIButton!
-    @IBOutlet weak var fiveButtom: UIButton!
-    @IBOutlet weak var sixButtom: UIButton!
-    @IBOutlet weak var sevenButtom: UIButton!
-    @IBOutlet weak var eightButtom: UIButton!
-    @IBOutlet weak var nineButtom: UIButton!
-    @IBOutlet weak var viewCalculator: UIView!
-    @IBOutlet weak var viewRespuesta: UIView!
-    @IBOutlet weak var calculatorOperation: UILabel!
+    @IBOutlet var clearButtom: UIButton!
+    @IBOutlet var plusMinusButtom: UIButton!
+    @IBOutlet var percentageButtom: UIButton!
+    @IBOutlet var divideButtom: UIButton!
+    @IBOutlet var timesButtom: UIButton!
+    @IBOutlet var minusButtom: UIButton!
+    @IBOutlet var plusButtom: UIButton!
+    @IBOutlet var equalButtom: UIButton!
+    @IBOutlet var pointButtom: UIButton!
+    @IBOutlet var zeroButtom: UIButton!
+    @IBOutlet var oneButtom: UIButton!
+    @IBOutlet var twoButtom: UIButton!
+    @IBOutlet var threeButtom: UIButton!
+    @IBOutlet var fourButtom: UIButton!
+    @IBOutlet var fiveButtom: UIButton!
+    @IBOutlet var sixButtom: UIButton!
+    @IBOutlet var sevenButtom: UIButton!
+    @IBOutlet var eightButtom: UIButton!
+    @IBOutlet var nineButtom: UIButton!
+    @IBOutlet var viewCalculator: UIView!
+    @IBOutlet var calculatorOperation: UILabel!
 
     var operationResult = 0
     var numberLabel = Double(0)
@@ -80,10 +79,10 @@ class ViewController: UIViewController {
     }
   
     func DisableButtomsOperations () {
-        plusButtom.isEnabled = false; plusButtom.backgroundColor = .systemRed
-        minusButtom.isEnabled = false; minusButtom.backgroundColor = .systemRed
-        timesButtom.isEnabled = false; timesButtom.backgroundColor = .systemRed
-        divideButtom.isEnabled = false; divideButtom.backgroundColor = .systemRed
+        plusButtom?.isEnabled = false; plusButtom?.backgroundColor = .systemRed
+        minusButtom?.isEnabled = false; minusButtom?.backgroundColor = .systemRed
+        timesButtom?.isEnabled = false; timesButtom?.backgroundColor = .systemRed
+        divideButtom?.isEnabled = false; divideButtom?.backgroundColor = .systemRed
     }
     
     @IBAction func NumbersCalculator(_ sender: UIButton) {
