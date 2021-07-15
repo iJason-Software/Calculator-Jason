@@ -9,44 +9,26 @@ import XCTest
 @testable import CalculatorJason
 
 class CalculatorJasonTestsOne: XCTestCase {
-    
+   
     var viewController: ViewController!
     
     override func setUpWithError() throws {
-         
          viewController = ViewController()
-        
     }
-
+  
     override func tearDownWithError() throws {
-    
       viewController = nil
-        
-    }
-
-    func testExample() throws {
-        
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
     }
     
     func testViewControllerNotNil() {
         XCTAssertNotNil(viewController)
-        
-        //XCTAssertNil(viewController)
     }
-
     
     func testOperacionLabelsDivideByTrue() {
         let buttomProvate = UIButton()
         buttomProvate.tag = 11
         viewController.calculatorOperation = UILabel()
-        viewController.calculatorOperation.text = "191"
+        viewController.calculatorOperation.text = "1"
         viewController.operationLabels(buttomProvate)
         XCTAssertEqual(viewController.calculatorOperation.text, "/" )
     }
@@ -55,7 +37,7 @@ class CalculatorJasonTestsOne: XCTestCase {
         let buttomProvate = UIButton()
         buttomProvate.tag = 12
         viewController.calculatorOperation = UILabel()
-        viewController.calculatorOperation.text = "191"
+        viewController.calculatorOperation.text = "666"
         viewController.operationLabels(buttomProvate)
         XCTAssertEqual(viewController.calculatorOperation.text, "x" )
     }
@@ -64,7 +46,7 @@ class CalculatorJasonTestsOne: XCTestCase {
         let buttomProvate = UIButton()
         buttomProvate.tag = 13
         viewController.calculatorOperation = UILabel()
-        viewController.calculatorOperation.text = "191"
+        viewController.calculatorOperation.text = "161"
         viewController.operationLabels(buttomProvate)
         XCTAssertEqual(viewController.calculatorOperation.text, "-" )
     }
@@ -73,8 +55,56 @@ class CalculatorJasonTestsOne: XCTestCase {
         let buttomProvate = UIButton()
         buttomProvate.tag = 14
         viewController.calculatorOperation = UILabel()
-        viewController.calculatorOperation.text = "191"
+        viewController.calculatorOperation.text = "311"
         viewController.operationLabels(buttomProvate)
         XCTAssertEqual(viewController.calculatorOperation.text, "+" )
+    }
+    
+    func testResultDivideBy() {
+        let buttomProvate = UIButton()
+        buttomProvate.tag = 15
+        viewController.operationResult = 11
+        viewController.calculatorOperation = UILabel()
+        viewController.calculatorOperation.text = ""
+        viewController.beforeNumber = 10
+        viewController.numberLabel = 2
+        viewController.operationLabels(buttomProvate)
+        XCTAssertEqual(viewController.calculatorOperation.text, "5.0")
+    }
+    
+    func testResultMultipliedBy() {
+        let buttomProvate = UIButton()
+        buttomProvate.tag = 15
+        viewController.operationResult = 12
+        viewController.calculatorOperation = UILabel()
+        viewController.calculatorOperation.text = ""
+        viewController.beforeNumber = 10
+        viewController.numberLabel = 2
+        viewController.operationLabels(buttomProvate)
+        XCTAssertEqual(viewController.calculatorOperation.text, "20.0")
+    }
+    
+    func testResultMinus() {
+        let buttomProvate = UIButton()
+        buttomProvate.tag = 15
+        viewController.operationResult = 13
+        viewController.calculatorOperation = UILabel()
+        viewController.calculatorOperation.text = ""
+        viewController.beforeNumber = 10
+        viewController.numberLabel = 2
+        viewController.operationLabels(buttomProvate)
+        XCTAssertEqual(viewController.calculatorOperation.text, "8.0")
+    }
+    
+    func testResultPlus() {
+        let buttomProvate = UIButton()
+        buttomProvate.tag = 15
+        viewController.operationResult = 14
+        viewController.calculatorOperation = UILabel()
+        viewController.calculatorOperation.text = ""
+        viewController.beforeNumber = 10
+        viewController.numberLabel = 2
+        viewController.operationLabels(buttomProvate)
+        XCTAssertEqual(viewController.calculatorOperation.text, "12.0")
     }
 }
