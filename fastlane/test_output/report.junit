@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='CalculatorJasonUITests.xctest' tests='14' failures='0'>
+  <testsuite name='CalculatorJasonTestsOne.CalculatorJasonTestsOne' tests='9' failures='0'>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testOperacionLabelsDivideByTrue' time='0.005'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testOperacionLabelsMinusTrue' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testOperacionLabelsPlusTrue' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testOperacionLabelsTimesTrue' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testResultDivideBy' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testResultMinus' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testResultMultipliedBy' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testResultPlus' time='0.001'/>
+    <testcase classname='CalculatorJasonTestsOne.CalculatorJasonTestsOne' name='testViewControllerNotNil' time='0.001'/>
+  </testsuite>
+  <testsuite name='CalculatorJasonUITests.CalculatorJasonUITests' tests='5' failures='0'>
+    <testcase classname='CalculatorJasonUITests.CalculatorJasonUITests' name='testAttemptToGiveError' time='12.474'/>
+    <testcase classname='CalculatorJasonUITests.CalculatorJasonUITests' name='testDivideByResult' time='5.825'/>
+    <testcase classname='CalculatorJasonUITests.CalculatorJasonUITests' name='testMinusResult' time='5.785'/>
+    <testcase classname='CalculatorJasonUITests.CalculatorJasonUITests' name='testPlusResult' time='5.772'/>
+    <testcase classname='CalculatorJasonUITests.CalculatorJasonUITests' name='testTimesResult' time='5.808'/>
+  </testsuite>
+</testsuites>

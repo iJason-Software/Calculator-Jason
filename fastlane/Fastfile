@@ -1,0 +1,5 @@
+default_platform(:ios)
+
+lane :tests do
+  run_tests(scheme: "CalculatorJason")
+end
