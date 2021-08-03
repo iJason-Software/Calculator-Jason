@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "69F10A9C-A898-42F1-BB7D-0587C7C51CA0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CalculatorJason.xcodeproj",
+        "identifier" : "A767750A269E11F00002FEB2",
+        "name" : "CalculatorJasonTestsOne"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:CalculatorJason.xcodeproj",
+        "identifier" : "A7C556C6269E2C3500CB0DBD",
+        "name" : "CalculatorJasonUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

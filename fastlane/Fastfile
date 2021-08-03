@@ -1,5 +1,21 @@
-default_platform(:ios)
+lane :tests do 	
+build_app(
+  project: "CalculatorJason.xcodeproj",
+  configuration: "Debug",
+  scheme: "CalculatorJason",
+  clean: true,
+  destination: "Desktop",
+  output_name: "CalculatorJason.ipa",
+  xcargs: "MY_ADHOC=0",
+  sdk: "10.0",
+)
 
-lane :tests do
-  run_tests(scheme: "CalculatorJason")
+end
+
+
+lane :buildKite do |options|
+  run_tests(
+    scheme: options[:scheme],
+    devices: ["iPhone 11"]
+  )
 end

@@ -20,6 +20,11 @@ or alternatively using `brew install fastlane`
 fastlane tests
 ```
 
+### buildKite
+```
+fastlane buildKite
+```
+
 
 ----
 
